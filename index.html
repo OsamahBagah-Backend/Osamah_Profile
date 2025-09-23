@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>بورتفوليو أسامه | مطور مواقع</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #f3f6fa;
+            color: #333;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            border-radius: 20px;
+            padding: 70px 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .avatar-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15)
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 18px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+            transition: all .3s ease-in-out;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12)
+        }
+
+        .tag {
+            display: inline-block;
+            margin: 3px;
+            background: #e9f0ff;
+            color: #0d6efd;
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .portfolio-item {
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .portfolio-item img {
+            transition: all .4s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(13, 110, 253, 0.85);
+            color: #fff;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .4s;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        footer {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">أسامة</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">عنّي</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits">لماذا موقع؟</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">الأعمال</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero my-4 container">
+        <img src="me.jpg" alt="صورة أسامة" class="avatar-img mb-3">
+        <h1>أسامة — مهندس برمجيات ومطور مواقع</h1>
+        <p>أبني مواقع تعريفية عصرية وسريعة التنفيذ ترفع مصداقية الجمعيات والسكنات الطلابية، وأوفر حلول رقمية عملية تناسب
+            بيئتنا المحلية.</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3 shadow">تواصل معي الآن</a>
+    </section>
+
+    <div class="container py-5" id="about">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card-custom p-4 h-100">
+                    <h3 class="fw-bold mb-3">عنّي</h3>
+                    <p>أنا أسامة، مطور مواقع ومهندس برمجيات بخبرة قوية في **الباك-إند** (C#, ASP.NET, SQL Server)
+                        و**الفرونت-إند** (HTML, CSS, Bootstrap).
+                        أركز على الجمع بين الأداء العالي والتصميم الجذاب لخلق مواقع متكاملة وسهلة الاستخدام.</p>
+                    <div>
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.NET</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-custom p-4 h-100">
+                    <h3 class="fw-bold mb-3">مميزات التعامل معي</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check text-success me-2"></i> إنجاز سريع أقل من أسبوع</li>
+                        <li class="mb-2"><i class="fa fa-check text-success me-2"></i> دعم مخصص عبر واتساب</li>
+                        <li class="mb-2"><i class="fa fa-check text-success me-2"></i> تصميم متجاوب مع جميع الأجهزة</li>
+                        <li class="mb-2"><i class="fa fa-check text-success me-2"></i> أسعار اقتصادية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Benefits Section -->
+    <section class="container py-5" id="benefits">
+        <h2 class="fw-bold text-center mb-4">لماذا تحتاج إلى موقع تعريفي؟</h2>
+        <div class="card-custom p-4 text-center">
+            <p class="lead">الموقع التعريفي ليس مجرد صفحات، بل هو **هويتك الرقمية** التي تمنحك الثقة أمام العملاء
+                والشركاء. بامتلاك موقع رسمي:</p>
+            <ul class="list-unstyled mt-3">
+                <li><i class="fa fa-check-circle text-primary me-2"></i> تعرض خدماتك بشكل احترافي ومنظم</li>
+                <li><i class="fa fa-check-circle text-primary me-2"></i> تزيد فرص ظهورك عبر محركات البحث</li>
+                <li><i class="fa fa-check-circle text-primary me-2"></i> تتيح وسيلة تواصل مباشرة وسهلة</li>
+                <li><i class="fa fa-check-circle text-primary me-2"></i> ترفع مصداقيتك مقارنة بالاعتماد على السوشال
+                    ميديا فقط</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container py-5" id="services">
+        <h2 class="fw-bold text-center mb-4">الخدمات</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-custom p-4 text-center h-100">
+                    <i class="fa fa-home fa-2x text-primary mb-3"></i>
+                    <h5>مواقع سكنات طلابية</h5>
+                    <p class="text-muted">صفحات لكل سكن، تفاصيل كاملة، صور، خرائط، ونموذج تواصل.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-custom p-4 text-center h-100">
+                    <i class="fa fa-bullhorn fa-2x text-primary mb-3"></i>
+                    <h5>دمج مع السوشال ميديا</h5>
+                    <p class="text-muted">إضافة روابط مباشرة لحسابات واتساب، فيسبوك، تويتر، وإنستجرام.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-custom p-4 text-center h-100">
+                    <i class="fa fa-chart-line fa-2x text-primary mb-3"></i>
+                    <h5>تحسين الظهور</h5>
+                    <p class="text-muted">إعدادات SEO أساسية لزيادة فرص ظهور الموقع في نتائج البحث.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5" id="portfolio">
+        <h2 class="fw-bold text-center mb-4">الأعمال السابقة</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" class="img-fluid"
+                        alt="demo">
+                    <div class="portfolio-overlay">
+                        <h5>موقع سكن طلابي</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" class="img-fluid"
+                        alt="demo">
+                    <div class="portfolio-overlay">
+                        <h5>موقع جمعية</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5" id="contact">
+        <h2 class="fw-bold text-center mb-4">تواصل معي</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card-custom p-4">
+                    <p><i class="fa fa-phone me-2 text-primary"></i> <strong>واتساب:</strong> <a
+                            href="https://wa.me/967779279428" target="_blank">+967 779279428</a></p>
+                    <p><i class="fa fa-envelope me-2 text-primary"></i> <strong>البريد:</strong> <a
+                            href="#">osamahbagah@gmail.com</a></p>
+                    <p><i class="fab fa-github me-2 text-dark"></i> <strong>Github:</strong> <a
+                            href="https://github.com/OsamahBagah-Backend"
+                            target="_blank">https://github.com/OsamahBagah-Backend</a></p>
+                    <p><i class="fab fa-linkedin me-2 text-primary"></i> <strong>LinkedIn:</strong> <a
+                            href="https://www.linkedin.com/in/osamah-bagah-153680263"
+                            target="_blank">https://www.linkedin.com/in/osamah-bagah-153680263</a></p>
+                    <form onsubmit="event.preventDefault(); alert('تم إرسال الرسالة');" class="mt-3">
+                        <input class="form-control mb-2" placeholder="الاسم" required>
+                        <input class="form-control mb-2" placeholder="الهاتف أو البريد" required>
+                        <textarea class="form-control mb-2" rows="3" placeholder="الرسالة"></textarea>
+                        <button class="btn btn-primary w-100">إرسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p class="mb-0">© 2025 أسامة — جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
